@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Teorema del Límite</title>
+  </head>
+  <body style=" background-image: url(images/FONDO\ MORADO.png);  
+  width:100%;
+  height:auto;
+  background-size: 100% 100%;
+  background-repeat:no-repeat;">
+<!----------------------NAV----------------------------------------------------->
+<div class="container">
+  <div class="menu-container" id="toggle">
+  <a href="#" class="menu" ><i class="fa fa-bars" aria-hidden="true"></i></a>
+  </div>
+  <div class="overlay" id="overlay">
+    <nav class="overlay-menu">
+      <ul>
+        <li style="background-color: #E74C3C;"><a href="DN.html">Distribución Normal</a></li>
+        <li style="background-color: #52BE80;"><a href="PRO.html">Probabilidad</a></li>
+        <li style="background-color: #8E44AD;"><a href="TCL.html">Teorema del Límite</a></li>
+        <li style="background-color: #F4D03F;"><a href="PDP.html">Gráfico Cuantil</a></li>
+        <li style="background-color: #5DADE2;"><a href="EM.html">Esperanza Matemática</a></li>
+        <li style="background-color: #2C3E50;"><a href="index.html">Home</a></li>
+      </ul>
+    </nav>
+  </div>
+<!-----SECCION DN--------------------------------------------------------------------->
+    <div class="TCL">
+      <h1>¿QUÉ ES EL TEOREMA DEL LÍMITE?</h1>
+      <br>
+      <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+      <p>Si una población tiene media y desviación típica, 
+         y tomamos muestras de tamaño n con n >30 (ó cualquier tamaño si la población es "normal"),
+         la media de estas muestras siguen aproximadamente una distribución normal dada por:</p>
+        <br>
+        <img src="images/tcl1.png" alt="">
+        <br>
+        <br>
+        <br>
+        <br>
+        <h3>Utilidades</h3>
+        <br>
+        <p>Permite averiguar la probabilidad de que la media de una muestra concreta esté en un cierto intervalo.</p>
+        <br>
+        <p>Permite calcular la probabilidad de que la suma de los elementos de una muestra esté, a priori, en un cierto intervalo.</p>
+        <img src="images/tcl2.png" alt="">
+        <br>
+        <br>
+        <p> Inferir la media de la población a partir de una muestra.</p>
+        <br>
+        <br>
+  <!-----SECCION EJEMPLO--------------------------------------------------------------------->
+  <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+        <h3>Ejemplo</h3>
+        <p>La población de las temperaturas corporales de adultos sanos tiene media <img src="images/tcle1.png" alt=""> y 
+           desviación típica de <img src="images/tcle2.png" alt="">. Si obtenemos una muestra de 100 personas. ¿Cuál es 
+           la probabilidad de que la media de la temperatura de la muestra sea menor o igual a <img src="images/tcle3.png" alt=""> ?</p>
+           <br>
+           <p style="font-weight: bold;">1. Calcular la distribución normal a la que se aproxima la media</p>
+           <p>Dado que la muestra es grande podemos aplicar el teorema del límite central. Por lo tanto, la media de la muestra 
+              se aproxima a una distribución normal con los parámetros</p>
+              <img src="images/tcle4.png" alt="">
+              <br>
+              <br>
+              <p>Esto es</p>
+              <img src="images/tcle5.png" alt="">
+              <br>
+              <br>
+              <p style="font-weight: bold;">2. Aproximar la probabilidad usando la distribución normal obtenida</p>
+
+              <p>Calculamos la probabilidad de obtener una temperatura menor o igual a <img src="images/tcle3.png" alt=""> . Para ello, calculamos el valor equivalente en la variable normal tipificada</p>
+              <br>
+              <img src="images/tcle6.png" alt="">
+              <br>
+              <br>
+              <img src="images/tcle7.png" alt="">
+<!-----SECCION EJERCICIOS--------------------------------------------------------------------->
+<br>
+<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+          <DIV class="ejercicios">
+            <h3>Ejercicios</h3>
+            <br>
+            <h5> 1. Un fabricante produce tabletas de chocolate cuyo peso en gramos sigue una distribución normal de media  125  gramos y desviación típica  4  gramos.</h5>
+
+                <p>a. Si las tabletas se empaquetan en lotes de  25,  ¿cuál es la probabilidad de que el peso medio de las tabletas de un lote se encuentre entre  124  y  126  gramos? </p>
+                <p>b. Si los lotes fueran de  64 tabletas, ¿cuál sería la probabilidad de que el peso medio de las tabletas del lote superase los  124  gramos? </p>
+
+                <!------------------------------ Modal------------------------------->
+                <button type="1 button" class="btn bg-light" data-toggle="modal" data-target="#modal1"style="color: #A569BD; border-color:#A569BD;">
+                   ¿Ayuda?
+                </button>
+                <br>
+                <br>
+                <br>
+                <div class="modal fade" id="modal1" tabindex="-1" role="dialog"
+                    aria-labelledby="myHugeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="row">
+                          <div class="col-md-8"></div>
+                          <div class="col-md-4">
+                            <span class="button-close" data-dismiss="modal" aria-label="Close">X</span>
+                          </div>
+                        </div>
+                        <div class="modal-body">
+                            <br>
+                            <img src="images/tcle8.gif" alt="">
+                            <br>
+                            <br>
+                            
+            </div>
+                </div>
+                </div>
+                </div>
+
+                <h5>2. El peso de los inquilinos de una comunidad de vecinos sigue una distribución normal de media  67 kg  y desviación típica de  6 kg. ¿Cuál es la probabilidad de que al subir  6  personas en un ascensor no superen el peso máximo permitido de  400 kg? </h5>
+                <br>
+             <!------------------------------ Modal------------------------------->
+                <button type="button" class="btn bg-light" data-toggle="modal" data-target="#modal2" style="color: #A569BD; border-color:#A569BD;">
+                    ¿Ayuda?
+                 </button>
+                 <br>
+                 <br>
+                 <br>
+                 <br>
+                 <div class="modal fade" id="modal2" tabindex="-1" role="dialog"
+                     aria-labelledby="myHugeModalLabel" aria-hidden="true">
+                     <div class="modal-dialog modal-dialog-centered modal-lg">
+                     <div class="modal-content">
+                      <div class="row">
+                          <div class="col-md-8"></div>
+                          <div class="col-md-4">
+                            <span class="button-close" data-dismiss="modal" aria-label="Close">X</span>
+                          </div>
+                        </div>
+                         <div class="modal-body">
+                             <br>
+                             <br>
+                            <img src="images/tcle9.gif" alt="">
+                            <br>
+                            <br>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!------SECCION FOOTER------------------------------------------------------>
+            <div class="FPRO footer-basic" style="background-color: #f4f6f6  ;">
+              <footer>
+                  <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+                    <ul>
+                        <li><a>Universidad Mariano Galvéz de Guatemala</a></li>
+                        <li><a>Ingeniería en Sistemas</a></li>
+                        <li><a>.</a></li>
+                    </ul>
+                  <p class="copyright">Ing. Alejandra Saraí García Quiñonez © 2021</p>
+              </footer>
+          </div>
+          <script src="main.js"></script>    
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Probabilidad</title>
+  </head>
+  <body style="background-image: url(images/FONDO\ VERDE.png);">
+<!----------------------NAV----------------------------------------------------->
+<div class="container">
+  <div class="menu-container" id="toggle">
+  <a href="#" class="menu" ><i class="fa fa-bars" aria-hidden="true"></i></a>
+  </div>
+  <div class="overlay" id="overlay">
+    <nav class="overlay-menu">
+      <ul>
+        <li style="background-color: #E74C3C;"><a href="DN.html">Distribución Normal</a></li>
+        <li style="background-color: #52BE80;"><a href="PRO.html">Probabilidad</a></li>
+        <li style="background-color: #8E44AD;"><a href="TCL.html">Teorema del Límite</a></li>
+        <li style="background-color: #F4D03F;"><a href="PDP.html">Gráfico Cuantil</a></li>
+        <li style="background-color: #5DADE2;"><a href="EM.html">Esperanza Matemática</a></li>
+        <li style="background-color: #2C3E50;"><a href="index.html">Home</a></li>
+      </ul>
+    </nav>
+  </div>
+<!-----SECCION DN--------------------------------------------------------------------->
+<div class="seccion-DN">
+  <br>
+      <h1>¿QUÉ ES LA PROBABILIDAD?</h1>
+      <br>
+      <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+      <p style="margin-left: 0; width: 70%;">La probabilidad es simplemente qué tan posible es que ocurra un evento determinado.</p>
+      <P style="margin-left: 0; width: 70%;">Cuando no estamos seguros del resultado de un evento, podemos hablar de la probabilidad 
+         de ciertos resultados: qué tan común es que ocurran. Al análisis de los eventos gobernados
+         por la probabilidad se le llama estadística.</P>
+        <br>
+        <h3>Propiedades</h3>
+        <br>
+        <p>La probabilidad es positiva y menor o igual que 1.</p>
+        <img src="images/prop1.png" alt="">
+        <br>
+        <br>
+        <br>
+        <p>La probabilidad del suceso seguro es 1.</p>
+        <img src="images/prop2.png" alt="">
+        <br>
+        <br>
+        <br>
+        <p>Si A y B son incompatibles, es decir A ∩ B = ∅ entonces:</p>
+        <img src="images/prop3.png" alt="">
+        <br>
+        <br>
+  <!-----SECCION EJEMPLO--------------------------------------------------------------------->
+  <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+        <h3>Ejemplo</h3>
+        <p style="margin-left: 0; width: 80%;">Los estudiantes A y B tienen respectivamente probabilidades 1/2 y 1/5 de suspender un examen.
+            La probabilidad de que suspendan el examen simultáneamente es de 1/10. 
+            Determinar la probabilidad de que al menos uno de los dos estudiantes suspenda el examen.</p>
+
+        <p style="margin-left: 0; width: 80%;">Los estudiantes A y B tienen respectivamente probabilidades 1/2 y 1/5 de suspender un examen. La probabilidad de que suspendan el examen simultáneamente es de 1/10.
+         Determinar la probabilidad de que al menos uno de los dos estudiantes suspenda el examen.</p>
+         <p style="margin-left: 0; width: 80%;">Son sucesos compatibles, es decir que la probabilidad de eventos simultáneos es distinta de cero. 
+            Calculamos entonces la probabilidad de la siguiente manera</p>
+            <br>
+            <img src="images/pro1.gif" alt="">
+            <br>
+<!-----SECCION EJERCICIOS--------------------------------------------------------------------->
+<br>
+<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+          <DIV class="ejercicios">
+            <h3>Ejercicios</h3>
+
+            <h5> 1. La probabilidad de que un hombre viva 20 años es ¼ y la de que su mujer viva 20 años es 1/3. Se pide calcular la probabilidad:</h5>
+
+                <p>De que ambos vivan 20 años.</p>
+                <p>De que el hombre viva 20 años y su mujer no.</p>
+                <p>De que ambos mueran antes de los 20 años.</p>
+
+                <!------------------------------ Modal------------------------------->
+                <button type="1 button" class="btn bg-light text-success border-success" data-toggle="modal" data-target="#modal1">
+                   ¿Ayuda?
+                </button>
+                <br>
+                <br>
+                <br>
+                <br>
+                
+                <div class="modal fade" id="modal1" tabindex="-1" role="dialog"
+                    aria-labelledby="myHugeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="row">
+                          <div class="col-md-8"></div>
+                          <div class="col-md-4">
+                            <span class="button-close" data-dismiss="modal" aria-label="Close">X</span>
+                          </div>
+                        </div>
+                        <div class="modal-body">
+                            <br>
+                            <p class="parrafoModal" style="color:blue;">1.De que ambos vivan 20 años</p>
+                            <img src="images/proe1.gif" alt="">
+                            <br>
+                            <br>
+                            <p class="parrafoModal" style="color:blue;">2.De que el hombre viva 20 años y su mujer no</p>
+                            <p class="parrafoModal">Formula:</p>
+                            <img src="images/proe2.gif" alt="">
+                            <p class="parrafoModal">entonces queda</p>
+                            <img src="images/proe3.gif" alt="">
+                            <br>
+                            <br>
+                            <p class="parrafoModal" style="color:blue;">3.De que ambos mueran antes de los 20 años</p>
+                            <img src="images/proe4.gif" alt="">
+                            <br>
+                            <br>
+            </div>
+                </div>
+                </div>
+                </div>
+
+                <h5> 2.En una clase hay 10 alumnas rubias, 20 morenas, cinco alumnos rubios y 10 morenos. Un día asisten 44 alumnos, encontrar la probabilidad de que el alumno que falta:</h5>
+                <p>Sea hombre</p>
+                <p>Sea hombre</p>
+                <p>Sea hombre o mujer</p>
+            
+                <!------------------------------ Modal------------------------------->
+                <button type="button" class="btn bg-light text-success border-success" data-toggle="modal" data-target="#modal2">
+                    ¿Ayuda?
+                 </button>
+                 <br>
+                 <br>
+                 <br>
+                 <br>
+                 <div class="modal fade" id="modal2" tabindex="-1" role="dialog"
+                     aria-labelledby="myHugeModalLabel" aria-hidden="true">
+                     <div class="modal-dialog modal-xl">
+                     <div class="modal-content">
+                      <div class="row">
+                          <div class="col-md-8"></div>
+                          <div class="col-md-4">
+                            <span class="button-close" data-dismiss="modal" aria-label="Close">X</span>
+                          </div>
+                        </div>
+                         <div class="modal-body">
+                            <br>
+                            <p class="parrafoModal" style="color:blue;">1. Sea hombre</p>
+                            <img src="images/proe5.gif" alt="">
+                            <br>
+                            <br>
+                            <p class="parrafoModal" style="color:blue;">2. Sea mujer morena</p>
+                            <p class="parrafoModal">Hay 20 mujeres morenas, entonces</p>
+                            <img src="images/proe6.gif" alt="">
+                            <br>
+                            <br>
+                            <p class="parrafoModal" style="color:blue;">3. Sea hombre o mujer</p>
+                            <img src="images/proe7.gif" alt="">
+                            <br>
+                            <br>
+             </div>
+            </div>
+          </div>
+        </div>
+     </DIV>
+  </div>
+</div>
+<!------SECCION FOOTER------------------------------------------------------>
+            <div class="FPRO footer-basic" style="background-color: #f4f6f6  ;">
+              <footer>
+                  <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+                    <ul>
+                        <li><a>Universidad Mariano Galvéz de Guatemala</a></li>
+                        <li><a>Ingeniería en Sistemas</a></li>
+                        <li><a>.</a></li>
+                    </ul>
+                  <p class="copyright">Ing. Alejandra Saraí García Quiñonez © 2021</p>
+              </footer>
+          </div>
+
+    <script src="main.js"></script>     
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
